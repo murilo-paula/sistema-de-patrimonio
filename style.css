@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+
+:root {
+  /* Cores */
+  --primary-color: #007bff;
+}
+
+/* ==========================================================================
+   2. RESET MODERNO & CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+/* Garante que padding e border não aumentem o tamanho total dos elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Melhora a rolagem e garante altura total */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+/* Configurações base do corpo da página */
+body {
+  line-height: 1.5;
+  min-height: 100%;
+}
+
+#btnmenu {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 35px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: end;
+    gap: 50vw;
+    align-items: center;
+    background-color: #1e3a8a;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-decoration: none;
+}
+
+aside {
+    display: block;
+    position: fixed; /*Manter a barra fixa e sem ser empurrada para baixo*/
+    background-color: #071d59;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-left: 10px;
+    width: 50px;
+    min-width: 50px;
+    height: 100vh;
+}
+
+#sidebar.ativa {
+    width: 300px;
+    min-width: 300px;
+}
+
+#sidebar h2 {
+    display: none;
+}
+
+#sidebar.ativa h2 {
+    display: block;
+}
+
+aside div {
+    font-size: 25px;
+}
+
+
+
+
+
+#main {
+    margin-left: 50px;
+}
+
+#main.ativa {
+    margin-left: 300px;
+}
+
