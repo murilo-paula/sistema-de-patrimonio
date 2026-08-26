@@ -46,9 +46,14 @@ nav {
     width: 100%;
     margin: auto;
     justify-content: end;
-    gap: 50vw;
+    gap: 60vw;
     align-items: center;
     background-color: #1e3a8a;
+    transition: 0.3s;
+}
+
+#headernav.ativa {
+    gap: 30vw;
 }
 
 .nav-links {
@@ -58,6 +63,20 @@ nav {
     text-decoration: none;
 }
 
+.sidebarline {
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.sidebarline img {
+    width: 37px;
+}
+
+.sidebarline h2 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 aside {
     display: block;
     position: fixed; /*Manter a barra fixa e sem ser empurrada para baixo*/
@@ -65,10 +84,11 @@ aside {
     top: 0;
     left: 0;
     padding-top: 50px;
-    padding-left: 10px;
+    padding-left: 5px;
     width: 50px;
     min-width: 50px;
     height: 100vh;
+    transition: 0.3s;
 }
 
 #sidebar.ativa {
@@ -78,6 +98,7 @@ aside {
 
 #sidebar h2 {
     display: none;
+    font-size: 20px;
 }
 
 #sidebar.ativa h2 {
@@ -85,15 +106,16 @@ aside {
 }
 
 aside div {
+    display: flex;
     font-size: 25px;
+    
 }
-
-
 
 
 
 #main {
     margin-left: 50px;
+    transition: 0.3s;
 }
 
 #main.ativa {
