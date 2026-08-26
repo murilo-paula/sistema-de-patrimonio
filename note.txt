@@ -8,6 +8,6 @@ landingfolio --> site para inspiração
 
 
 Fazer logo
-palleta --> #1E3A8A 
+palleta --> #60a5fa
 
 Gostei desse modelo de site "https://dribbble.com/shots/15252526-Sistema-de-Gesti-n-de-Ventas"
