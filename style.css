@@ -5,6 +5,9 @@
   /* Cores */
   --primary-color: #034C8C;
   --second-color: #023E73;
+  --third-color: #F29F05;
+  --fourth-color: #F28B0C;
+  --fifth-color: #F2F2F2;
 }
 
 /* ==========================================================================
@@ -29,6 +32,12 @@ html {
 body {
   line-height: 1.5;
   min-height: 100%;
+  background-color: var(--fifth-color);
+  overflow-x: hidden;
+}
+
+header {
+    border-bottom: 2px solid var(--second-color);
 }
 
 #btnmenu {
@@ -44,17 +53,30 @@ body {
 
 nav {
     display: flex;
-    width: 100%;
-    justify-content: end;
-    gap: 60vw;
+    position: fixed;
+    width: calc(100% - 50px);
+    margin-left: 50px;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    transition: 0.3s;
+    transition: 0.2s;
     list-style-type: none;
 }
 
-#headernav.ativa {
-    gap: 30vw;
+nav.ativa {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+}
+
+nav h1 {
+    color:var(--third-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li {
+    color: var(--fifth-color);
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -75,7 +97,7 @@ nav {
     width: 37px;
 }
 
-.sidebarline h2 {
+.sidebarline a {
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -91,7 +113,7 @@ aside {
     width: 50px;
     min-width: 50px;
     height: 100vh;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 #sidebar.ativa {
@@ -99,12 +121,13 @@ aside {
     min-width: 300px;
 }
 
-#sidebar h2 {
+#sidebar a {
     display: none;
     font-size: 20px;
+    cursor: pointer;
 }
 
-#sidebar.ativa h2 {
+#sidebar.ativa a {
     display: block;
 }
 
@@ -117,11 +140,32 @@ aside div {
 
 
 #main {
+    margin-top: 30px;
     margin-left: 50px;
-    transition: 0.3s;
+    transition: 0.2s;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 #main.ativa {
     margin-left: 300px;
 }
 
+.ativosContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin: auto;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
