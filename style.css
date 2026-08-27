@@ -61,6 +61,7 @@ nav {
     background-color: var(--primary-color);
     transition: 0.2s;
     list-style-type: none;
+    z-index: 999;
 }
 
 nav.ativa {
@@ -71,6 +72,7 @@ nav.ativa {
 nav h1 {
     color:var(--third-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
 }
 
 nav ul li {
@@ -85,7 +87,25 @@ nav ul li {
     gap: 20px;
     list-style-type: none;
     margin-right: 10px;
+}
 
+.nav-links a {
+    text-decoration: none;
+    color: var(--fifth-color);
+}
+
+.nav-links li a:hover {
+    color: var(--fourth-color);
+    transition: 0.4s;
+}
+
+#pesquisa {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 200px;
 }
 
 .sidebarline {
@@ -94,7 +114,15 @@ nav ul li {
 }
 
 .sidebarline img {
-    width: 37px;
+    width: 30px;
+    border-left: 2px solid transparent
+}
+
+.sidebarline img:hover {
+    border-left: 2px solid var(--fourth-color);
+    transition: 0.4s;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .sidebarline a {
@@ -131,6 +159,10 @@ aside {
     display: block;
 }
 
+#sidebar img {
+    cursor: pointer;
+}
+
 aside div {
     display: flex;
     font-size: 25px;
@@ -145,6 +177,11 @@ aside div {
     transition: 0.2s;
     padding: 20px;
     flex-wrap: wrap;
+}
+
+#main h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #main.ativa {
@@ -168,4 +205,10 @@ aside div {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
 }
