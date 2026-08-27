@@ -10,8 +10,7 @@ landingfolio --> site para inspiração
 Fazer logo
 cor01 --> #034C8C
 cor02 --> #023E73
-cor03 --> #F29F05
-cor04 --> #F28B0C
-cor05 --> #F2F2F2
 
-Gostei desse modelo de site "https://dribbble.com/shots/15252526-Sistema-de-Gesti-n-de-Ventas"
+cor-branca --> #F2F2F2
+
+

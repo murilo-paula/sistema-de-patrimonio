@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
-
 :root {
   /* Cores */
   --primary-color: #034C8C;
   --second-color: #023E73;
   --third-color: #F29F05;
-  --fourth-color: #F28B0C;
-  --fifth-color: #F2F2F2;
+
+  --defaut-write-color: #F2F2F2;
 }
 
 /* ==========================================================================
@@ -32,7 +31,7 @@ html {
 body {
   line-height: 1.5;
   min-height: 100%;
-  background-color: var(--fifth-color);
+  background-color: var(--defaut-write-color);
   overflow-x: hidden;
 }
 
@@ -73,10 +72,11 @@ nav h1 {
     color:var(--third-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 10px;
+    font-weight: 800;
 }
 
 nav ul li {
-    color: var(--fifth-color);
+    color: var(--defaut-write-color);
     font-size: 20px;
     cursor: pointer;
 }
@@ -91,11 +91,11 @@ nav ul li {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--fifth-color);
+    color: var(--defaut-write-color);
 }
 
 .nav-links li a:hover {
-    color: var(--fourth-color);
+    color: var(--third-color);
     transition: 0.4s;
 }
 
@@ -119,7 +119,7 @@ nav ul li {
 }
 
 .sidebarline img:hover {
-    border-left: 2px solid var(--fourth-color);
+    border-left: 2px solid var(--third-color);
     transition: 0.4s;
     cursor: pointer;
     transform: scale(1.1);
@@ -151,7 +151,7 @@ aside {
 
 #sidebar a {
     display: none;
-    font-size: 20px;
+    font-size: 17px;
     cursor: pointer;
 }
 
@@ -160,6 +160,7 @@ aside {
 }
 
 #sidebar img {
+    margin-left: 5px;
     cursor: pointer;
 }
 
