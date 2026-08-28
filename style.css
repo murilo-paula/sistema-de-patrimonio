@@ -71,6 +71,7 @@ nav ul li {
     font-size: 20px;
     cursor: pointer;
     align-items: center;
+    height: 20px;   
 }
 
 .nav-links {
@@ -79,11 +80,9 @@ nav ul li {
     gap: 20px;
     list-style-type: none;
     margin-right: 10px;
-    height: 40px;
 }
 
 nav img {
-    margin-top: 10px;
     width: 20px;
     margin: auto;
 }
@@ -95,6 +94,7 @@ nav img {
     outline: none;
     height: 30px;
     width: 200px;
+    border: 1px solid #e0dddd;
 }
 
 .sidebarline {
@@ -117,6 +117,7 @@ nav img {
 .sidebarline a {
     margin-top: auto;
     margin-bottom: auto;
+    color: var(--defaut-write-color);
 }
 
 aside {
