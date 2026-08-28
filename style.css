@@ -42,7 +42,6 @@ header {
     background-color: white;
     border-bottom: 2px solid #e0dddd;
     width: calc(100% - 50px);
-    height: 40px;
     margin-left: 50px;
     justify-content: end;
     align-items: center;
@@ -71,6 +70,7 @@ nav ul li {
     color: var(--defaut-write-color);
     font-size: 20px;
     cursor: pointer;
+    align-items: center;
 }
 
 .nav-links {
@@ -79,16 +79,13 @@ nav ul li {
     gap: 20px;
     list-style-type: none;
     margin-right: 10px;
+    height: 40px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: var(--defaut-write-color);
-}
-
-.nav-links li a:hover {
-    color: var(--third-color);
-    transition: 0.4s;
+nav img {
+    margin-top: 10px;
+    width: 20px;
+    margin: auto;
 }
 
 #pesquisa {
